@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main (){
+    int n,x,y,c=3,e=2;
+    cin >> n >> x >> y;
+    double num,den,t,sxy = 0.0;
+    for(int i = 1; i <=n ; i++){
+        int fact = 1;
+        for (int j = 2; j <= c; j++){
+            fact *= j;
+        }
+        c+=3;
+        if (i%2!=0){
+            num=e*y;
+            den=pow(x,fact);
+        }   else {
+            num=pow(x,fact);
+            den=e*y;
+        }
+        e+=3;
+        t=num/den;
+        if (i%2!=0){
+            sxy+=t;
+        }   else {
+            sxy-=t;
+        }
+    }
+    cout << sxy;
+return 0;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int i,n,a;
+    double c,b;
+    cin>>n;
+    for(i=1;i<=n;i++){
+        cout<<"ingrese nota"<<i<<":";
+        cin>>a;
+        b=b+a;
+    }
+    c=b/n;
+    cout<<"el promedio es:"<<c;
+}

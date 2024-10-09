@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int n;
+    cin >> n;
+    int st = 0, c=1;
+    int par = 2, impar = 1;
+    for (int i=1 ; i<=n; ++i){
+        if (c <= n){
+            st+=7*i;
+            ++c;
+        }
+        if (c <= n){
+            st-=impar;
+            ++c;
+            impar+=2;
+        }
+        if (c <= n){
+            st-=par;
+            ++c;
+            par+=2;
+        }
+    }
+    cout << st;
+    return 0;
+}

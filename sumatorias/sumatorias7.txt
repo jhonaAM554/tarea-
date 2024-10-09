@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main (){
+    double n,num = 2, den = 3, suma=0,term;
+    cout<<"cantidad de terminos: ";
+    cin >> n;
+    for (int i = 0 ; i < n; i++){
+        term = num/den;
+        num+=1;
+        den+=1;
+        if (i%2==0){
+            suma+=term;
+        }   else {
+            suma-=term;
+        }
+    }
+    cout << suma;
+return 0;
+}
