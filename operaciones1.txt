@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    float x,y,a;
+    cout<<"ingrese x:";
+    cin>>x;
+    a=(x+(x*x))/((5*x)+3);
+    y=(a+x)*(((a)/(2*x)));
+    cout<<"el valor de y es:"<<y;
+    return 0;
+}
