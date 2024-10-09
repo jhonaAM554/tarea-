@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    float num;
+    cout<<"ingrese numero:";
+    cin>>num;
+    int b;
+    b=num;
+    if(b==num)
+    {
+        cout<<"el numero es entero:";
+    }
+    else
+    {
+    cout<<"el numero es real";
+    }
+}
+    
