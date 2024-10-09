@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    int A,B,C,D,a,b,dis;
+    cout<<"ingrese tres numeros enteros:";
+    cin>>A>>B>>C;
+    dis=(B*B)-(4*A*C);
+    a=(-B-sqrt(dis))/(2*A);
+    b=(-B+sqrt(dis))/(2*A);
+    cout<<"la solucion de la ecuacion"<<endl<<"x="<<a;
+    cout<<"\nx="<<b;
+    
+}
