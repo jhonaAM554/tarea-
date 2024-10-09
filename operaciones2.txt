@@ -1,0 +1,17 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    float x,y,z,a,b,c,d;
+    cout<<"ingrese 3 numeros:";
+    cin>>x>>y>>z;
+    a=(((2*x)+y)/z);
+    b=(x+2*y+3*z)/(z-2*y-3*x);
+    c=(x+2*y+3*z)/(c+(x*x)+(z*z));
+    d=((a)*(b))/(c+(x*x)+(z*z));
+    cout<<fixed<<setprecision(6)<<"la respuesta es:";
+    cout<<d;
+    return 0;
+}
