@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    float a,c;
+    cout<<"ingrese un numero:";
+    cin>>a;
+    int b;
+    b=a;
+    c=a-b;
+    if(c>=0.5){
+        cout<<b+1;}
+        else {
+            cout<<b;
+        }
+    }
