@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int cantidadnumero,incrementoa=1,incrementob=2;
+    cin>>cantidadnumero;
+    for(int i=1;i<=cantidadnumero;i++){
+        if(i%4==1 || i%4==2){
+            cout<<incrementoa<<",";
+            incrementoa+=2;
+        }else {
+            cout<<incrementob<<",";
+            incrementob+=2;
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int cantidadnumero,numeroactual=1;
+    cin>>cantidadnumero;
+    for(int i=1;i<=cantidadnumero;i++){
+        if(i%4==0){
+            cout<<"0"<<",";
+            numeroactual-=1;
+        }else {
+            cout<<numeroactual<<",";
+            numeroactual+=2;
+        }
+    }
+    return 0;
+}
